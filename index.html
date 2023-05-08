@@ -33,7 +33,9 @@
             padding: 50px 20px;
         }
 
-        .service {
+        .service,
+        .service__red,
+        .service__blue {
             border: 1px solid #fff;
             border-radius: 5px;
             margin-bottom: 20px;
@@ -42,6 +44,14 @@
 
         .service:hover {
             box-shadow: 0 0 10px #fff;
+        }
+
+        .service__red:hover {
+            box-shadow: 0 0 10px #ff0000;
+        }
+
+        .service__blue:hover {
+            box-shadow: 0 0 10px #252525;
         }
 
         .service__logo {
@@ -104,7 +114,7 @@
         <h1>My Referral Links</h1>
         <p>Here are some services I use and recommend:</p>
 
-        <div class="service">
+        <div class="service__red">
             <img class="service__logo"
                 src="https://www.interactivebrokers.com/images/web/logos/ibkr-logo-text-white.svg" alt="Service Logo">
             <h2 class="service__name">Interactive Brokers</h2>
@@ -117,7 +127,7 @@
                 Brokers</a>
         </div>
 
-        <div class="service">
+        <div class="service__blue">
             <img class="service__logo" src="https://static.tradingview.com/static/images/logo-preview.png"
                 alt="Service Logo">
             <h2 class="service__name">Trading View</h2>
