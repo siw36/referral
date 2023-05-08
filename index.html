@@ -35,7 +35,8 @@
 
         .service,
         .service__red,
-        .service__blue {
+        .service__blue,
+        .service__yellow {
             border: 1px solid #fff;
             border-radius: 5px;
             margin-bottom: 20px;
@@ -52,6 +53,10 @@
 
         .service__blue:hover {
             box-shadow: 0 0 10px #252525;
+        }
+
+        .service__yellow:hover {
+            box-shadow: 0 0 10px rgb(252, 213, 53);
         }
 
         .service__logo {
@@ -75,7 +80,9 @@
             padding-right: 20px;
         }
 
-        .service__link__red {
+        .service__link__red,
+        .service__link__blue,
+        .service__link__yellow {
             display: block;
             padding: 10px;
             background-color: #fff;
@@ -91,19 +98,13 @@
             color: #fff;
         }
 
-        .service__link__blue {
-            display: block;
-            padding: 10px;
-            background-color: #fff;
-            color: #252525;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: none;
-            transition: background-color 0.3s ease-in-out;
-        }
-
         .service__link__blue:hover {
             background-color: #0B1226;
+            color: #fff;
+        }
+
+        .service__link__yellow:hover {
+            background-color: rgb(252, 213, 53);
             color: #fff;
         }
     </style>
@@ -138,6 +139,34 @@
             <a class="service__link__blue" href="https://www.tradingview.com/gopro/?share_your_love=siw36">Get Started
                 with Trading View</a>
         </div>
+
+        <div class="service__yellow">
+            <img class="service__logo" src="https://cdn.cdnlogo.com/logos/b/51/binance.png" alt="Service Logo">
+            <h2 class="service__name">Binance</h2>
+            <p class="service__description">
+                The largest crypto exchange with a great credit card offering. <br>
+                Deposit $50 and we'll both get $100 trading fee credit.
+            </p>
+            <a class="service__link__yellow"
+                href="https://www.binance.com/en/activity/referral-entry/CPA?fromActivityPage=true&ref=CPA_00OLHBK6CR">Get
+                Started
+                with Binance</a>
+        </div>
+
+        <!--
+        <div class="service__blue">
+            <img class="service__logo" src="https://static.tradingview.com/static/images/logo-preview.png"
+                alt="Service Logo">
+            <h2 class="service__name">Bybit</h2>
+            <p class="service__description">
+                Here you can trade Crypto Futures/Derivates with no country restriction and very liberal KYC. I use
+                Bybit to trade Crypto perperual contracts with high leverage. <br>
+                You will get $10 discount on any monthly or $30 discount on every yearly plan.
+            </p>
+            <a class="service__link__blue" href="https://www.tradingview.com/gopro/?share_your_love=siw36">Get Started
+                with Bybit</a>
+        </div>
+        -->
 
     </div>
 </body>
